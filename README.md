@@ -2,6 +2,8 @@
 
 An SSR video streaming frontend which uses doodstream.com as a backend. It is built using [Next.js](https://nextjs.org/) and [Tailwind CSS](https://tailwindcss.com/).
 
+**Important Note**: The project currently uses `@cloudflare/next-on-pages`, which has known vulnerabilities. Please monitor for updates or consider alternatives if necessary.
+
 ## Features
 
 -   🌐 SSR (Server Side Rendering)
@@ -25,6 +27,8 @@ The following environment variables are required to run the project:
 -   `DOODSTREAM_API_KEY`: API key for doodstream.com
 -   `DOODSTREAM_API_URL`: API URL for doodstream.com (default: `https://doodapi.com`)
 -   `SITENAME`: Name of the website (default: `DoodWeb`)
+-   `DOODSTREAM_BASE_URL`: Base URL for Doodstream API (default: `https://eeeea.sitikhoir19.workers.dev`)
+-   `DEFAULT_PER_PAGE`: Default number of items per page (default: `40`)
 
 ## Development
 
